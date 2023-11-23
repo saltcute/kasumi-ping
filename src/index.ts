@@ -1,6 +1,6 @@
-import { BaseCommand, BaseSession, Card, CommandFunction } from "kasumi.js";
+import Kasumi, { BaseCommand, BaseSession, Card, CommandFunction } from "kasumi.js";
 
-class PingCommand extends BaseCommand {
+class PingCommand extends BaseCommand<Kasumi<any>> {
     constructor(name: string = "ping") {
         super();
         this.name = name;

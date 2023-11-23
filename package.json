@@ -1,32 +1,34 @@
 {
-    "name": "kasumi-ping",
-    "version": "1.0.0",
-    "description": "a simple ping command for Kasumi",
-    "main": "index.js",
-    "scripts": {
-        "build": "tsc",
-        "clean": "rimraf dist/*",
-        "make": "npm run clean && npm run build"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Hexona69/kasumi-ping.git"
-    },
-    "keywords": [
-        "KOOK",
-        "chatbot",
-        "bot",
-        "typescript",
-        "javascript"
-    ],
-    "author": "Hexona",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Hexona69/kasumi-ping/issues"
-    },
-    "homepage": "https://github.com/Hexona69/kasumi-ping#readme",
-    "dependencies": {
-        "kasumi": "^1.0.0",
-        "typescript": "^5.2.2"
-    }
+  "name": "@saltcute/kasumi-ping",
+  "version": "0.1.0",
+  "description": "a simple ping command for Kasumi",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist/*",
+    "make": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hexona69/kasumi-ping.git"
+  },
+  "keywords": [
+    "KOOK",
+    "chatbot",
+    "bot",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Hexona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hexona69/kasumi-ping/issues"
+  },
+  "homepage": "https://github.com/Hexona69/kasumi-ping#readme",
+  "dependencies": {
+    "kasumi.js": "^0.5.1",
+    "typescript": "^5.2.2"
+  },
+  "types": "./dist/index.d.ts",
+  "devDependencies": {}
 }
