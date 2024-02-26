@@ -1,6 +1,6 @@
 {
   "name": "@saltcute/kasumi-ping",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a simple ping command for Kasumi",
   "main": "dist/index.js",
   "scripts": {
@@ -26,9 +26,8 @@
   },
   "homepage": "https://github.com/Hexona69/kasumi-ping#readme",
   "dependencies": {
-    "kasumi.js": "^0.5.1",
+    "kasumi.js": "^0.6.0",
     "typescript": "^5.2.2"
   },
-  "types": "./dist/index.d.ts",
-  "devDependencies": { }
+  "types": "./dist/index.d.ts"
 }

@@ -13,26 +13,26 @@ class PingCommand extends BaseCommand<Kasumi<any>> {
         const localOrigin = Date.now();
         session.send([new Card()
             .addModule({
-                "type": "section",
-                "text": {
-                    "type": "paragraph",
-                    "cols": 2,
-                    "fields": [
+                type: Card.Modules.Types.TEXT,
+                text: {
+                    type: Card.Parts.TextType.MULTI_ROW,
+                    cols: 2,
+                    fields: [
                         {
-                            "type": "kmarkdown",
-                            "content": `**Local Origin**\n(font)${localOrigin}(font)[success]`
+                            type: Card.Parts.TextType.KMARKDOWN,
+                            content: `**Local Origin**\n(font)${localOrigin}(font)[success]`
                         },
                         {
-                            "type": "kmarkdown",
-                            "content": `**Remote Origin**\n(font)${remoteOrigin}(font)[primary]`
+                            type: Card.Parts.TextType.KMARKDOWN,
+                            content: `**Remote Origin**\n(font)${remoteOrigin}(font)[primary]`
                         },
                         {
-                            "type": "kmarkdown",
-                            "content": `**Local Response**\n(font)N/A(font)[secondary]`
+                            type: Card.Parts.TextType.KMARKDOWN,
+                            content: `**Local Response**\n(font)N/A(font)[secondary]`
                         },
                         {
-                            "type": "kmarkdown",
-                            "content": `**Remote Response**\n(font)N/A(font)[secondary]`
+                            type: Card.Parts.TextType.KMARKDOWN,
+                            content: `**Remote Response**\n(font)N/A(font)[secondary]`
                         }
                     ]
                 }
@@ -51,26 +51,26 @@ class PingCommand extends BaseCommand<Kasumi<any>> {
                         }
                         session.update(messageId, [new Card()
                             .addModule({
-                                "type": "section",
-                                "text": {
-                                    "type": "paragraph",
-                                    "cols": 2,
-                                    "fields": [
+                                type: Card.Modules.Types.TEXT,
+                                text: {
+                                    type: Card.Parts.TextType.MULTI_ROW,
+                                    cols: 2,
+                                    fields: [
                                         {
-                                            "type": "kmarkdown",
-                                            "content": `**LocalOrigin**\n(font)${localOrigin}(font)[success]`
+                                            type: Card.Parts.TextType.KMARKDOWN,
+                                            content: `**LocalOrigin**\n(font)${localOrigin}(font)[success]`
                                         },
                                         {
-                                            "type": "kmarkdown",
-                                            "content": `**RemoteOrigin**\n(font)${remoteOrigin}(font)[primary]`
+                                            type: Card.Parts.TextType.KMARKDOWN,
+                                            content: `**RemoteOrigin**\n(font)${remoteOrigin}(font)[primary]`
                                         },
                                         {
-                                            "type": "kmarkdown",
-                                            "content": `**LocalResponse**\n(font)${localResponse}(font)[pink]`
+                                            type: Card.Parts.TextType.KMARKDOWN,
+                                            content: `**LocalResponse**\n(font)${localResponse}(font)[pink]`
                                         },
                                         {
-                                            "type": "kmarkdown",
-                                            "content": `**RemoteResponse**\n(font)${remoteReponse}(font)[purple]`
+                                            type: Card.Parts.TextType.KMARKDOWN,
+                                            content: `**RemoteResponse**\n(font)${remoteReponse}(font)[purple]`
                                         }
                                     ]
                                 }
